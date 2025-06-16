@@ -1,6 +1,12 @@
 ## 🔖 lightning-tabset in Salesforce LWC
 
-The `<lightning-tabset>` component in Salesforce LWC is used to create tabbed interfaces, allowing you to organize related content into separate, switchable views.
+### 📘 What is `<lightning-tabset>`?
+
+A `<lightning-tabset>` displays a tabbed container with multiple content areas, only one of which is visible at a time. Tabs are displayed horizontally in a row, with the selected tab’s content shown below it by default.
+
+Use tabsets to separate information into logical sections based on functionality or use case, making complex layouts easier to navigate and understand.
+
+A `<lightning-tabset>` can contain multiple `<lightning-tab>` components as its body. Each tab defines a unique section of content that users can switch between.
 
 ### 🧩 Attributes Used
 
