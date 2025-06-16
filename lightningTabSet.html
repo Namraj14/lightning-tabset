@@ -1,0 +1,38 @@
+<template>
+    <!-- Lightning card provides a styled container with a header -->
+    <lightning-card title="Tabset Demo with All Properties">
+
+        <!-- Tabset component with:
+             - variant="scoped": adds borders and background (or standard(default))
+             - active-tab-value: sets the default selected tab
+             - onactive: triggers method when user selects a tab -->
+        <lightning-tabset
+            variant="scoped" 
+            active-tab-value={selectedTab}
+            onactive={handleTabChange}
+        >
+
+            <!-- First tab with label and a unique value -->
+            <lightning-tab label="Profile" value="profile">
+                <p>This is the Profile tab content.</p>
+            </lightning-tab>
+
+            <!-- Second tab -->
+            <lightning-tab label="Settings" value="settings">
+                <p>This is the Settings tab content.</p>
+            </lightning-tab>
+
+            <!-- Third tab -->
+            <lightning-tab label="Notifications" value="notifications">
+                <p>This is the Notifications tab content.</p>
+            </lightning-tab>
+
+        </lightning-tabset>
+
+        <!-- Displaying the currently selected tab value below the tabset -->
+        <div class="slds-m-top_medium">
+            <p><strong>Currently selected tab:</strong> {selectedTab}</p>
+        </div>
+
+    </lightning-card>
+</template>
